@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            🏥 HealthBridge
+        </div>
+
+        <p class="subtitle">
+            Doctor Portal Login
+        </p>
+
+        <form>
+            <input type="email" placeholder="Email Address">
+
+            <input type="password" placeholder="Password">
+
+            <button type="submit">
+                Login
+            </button>
+        </form>
+
+        <div class="register-link">
+            <a href="/doctor-register/">
+                Create Doctor Account
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

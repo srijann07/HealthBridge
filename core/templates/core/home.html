@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthBridge</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="hero">
+
+    <h1>🏥 HealthBridge</h1>
+
+    <p>
+        Connecting Patients and Doctors Seamlessly
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>👨‍⚕️ Doctor</h2>
+            <a href="/doctor-login/">
+                <button>Login</button>
+            </a>
+
+            <a href="/doctor-register/">
+                <button class="secondary">Register</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>🧑‍🤝‍🧑 Patient</h2>
+            <a href="/patient-login/">
+                <button>Login</button>
+            </a>
+
+            <a href="/patient-register/">
+                <button class="secondary">Register</button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
