@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#dff5ff,#f8fdff);
+}
+
+/* Background */
+
+.login-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.35),
+    rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600");
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* Glass Card */
+
+.login-box{
+    width:450px;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+
+    padding:40px;
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.2);
+
+    animation:fadeUp 1s ease;
+}
+
+.login-box h1{
+    text-align:center;
+    color:#0F4C81;
+    margin-bottom:10px;
+    font-size:35px;
+}
+
+.login-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+/* Inputs */
+
+input{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#eef4ff;
+
+    font-size:15px;
+    outline:none;
+
+    transition:.3s;
+}
+
+input:focus{
+    background:white;
+    box-shadow:0 0 12px #42a5f5;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:15px;
+
+    margin-top:20px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#0F4C81;
+
+    color:white;
+    font-size:17px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1565c0;
+    transform:translateY(-4px);
+}
+
+/* Links */
+
+a{
+    display:block;
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#0F4C81;
+    font-weight:600;
+
+    text-decoration:none;
+}
+
+a:hover{
+    color:#1565c0;
+}
+
+/* Floating Icons */
+
+.float1,
+.float2,
+.float3,
+.float4{
+    position:fixed;
+    font-size:50px;
+    opacity:.15;
+    z-index:1;
+}
+
+.float1{
+    top:15%;
+    left:5%;
+    animation:float 5s infinite;
+}
+
+.float2{
+    top:35%;
+    right:5%;
+    animation:float 7s infinite;
+}
+
+.float3{
+    bottom:15%;
+    left:8%;
+    animation:float 6s infinite;
+}
+
+.float4{
+    bottom:20%;
+    right:8%;
+    animation:float 8s infinite;
+}
+
+/* Animations */
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-25px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .login-box{
+        width:90%;
+        padding:30px;
+    }
+
+    .login-box h1{
+        font-size:28px;
+    }
+
+}
