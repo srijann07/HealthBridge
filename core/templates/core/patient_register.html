@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient Register</title>
+    <link rel="stylesheet" href="{% static 'css/patient.css' %}">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>🩺 Patient Registration</h1>
+
+        <form>
+
+            <input type="text" placeholder="Full Name">
+
+            <input type="email" placeholder="Email">
+
+            <input type="number" placeholder="Age">
+
+            <input type="text" placeholder="Blood Group">
+
+            <input type="password" placeholder="Password">
+
+            <button>
+                Register
+            </button>
+
+        </form>
+
+        <a href="/patient-login/">
+            Already have an account?
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

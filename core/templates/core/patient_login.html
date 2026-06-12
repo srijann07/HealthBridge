@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient Login</title>
+   <link rel="stylesheet" href="{% static 'css/patient.css' %}">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>🩺 Patient Login</h1>
+
+        <p>Welcome back to HealthBridge</p>
+
+        <form>
+
+            <input type="email" placeholder="Email">
+
+            <input type="password" placeholder="Password">
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <a href="/patient-register/">
+            Don't have an account? Register
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
