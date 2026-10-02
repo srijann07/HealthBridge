@@ -1,0 +1,12 @@
+# Local / generated files
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+.venv/
+venv/
+.env
+*.log
+uploads/
+.DS_Store
+Thumbs.db
